@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+body{
+    background-color: #F0FFFF;
+}
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    background-color: #0c0b0b;
+    width: 100%;
+    padding: 0px;
+}
+
+.logo, .sociais{
+    width: 30%;
+}
+
+
+.logo img{
+    width: 200px;
+    cursor: pointer;;
+}
+
+.menu{
+    width: 50%;
+}
+
+.menu nav a{
+    color: #ffffffff;
+    text-decoration: none;
+    padding-right: 10px;
+    font-size: 18px;
+    position: relative;
+}
+
+.menu nav a::after{
+    content: " ";
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(45deg, #F0FFFF, #F0FFFF);
+    position: absolute;
+    top: 30px;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.menu nav a:hover::after{
+    width: 30px;
+}
+
+.sociais button{
+    width: 40px;
+    height: 40px;
+    background-image: linear-gradient(45deg, #F0FFFF, #F0FFFF);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.sociais button i{
+   font-size: 20px;
+   color: #000000 ;
+}
+
+.banner{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+}
+
+.banner-container{
+    background-color: #0c0b0b;
+    color: rgb(95, 93, 93);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.banner-content{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-banner{
+    width: 100px;
+    height: auto;
+}
+
+.banner-text{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.banner-link{
+    margin-left: 10px;
+    color:rgb(95, 93, 93);
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.home{
+    padding: 60px 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+    color: #111;
+    font-family: 'Helvetica Neue', sans-serif;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 150px;
+}
+
+.home p{
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
+
+.home h1{
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.sobre{
+    padding: 60px 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+    color: #111;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.sobre h1{
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.sobre p{
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
+
+.site-footer{
+    background-color:  #111;
+    color: #eee;
+    padding: 40px 20px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+.site-footer h3{
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.site-footer p,
+.site-footer a{
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.6;
+    text-decoration: none;
+}
+
+.site-footer a:hover{
+    color: #fff;
+}
+
+.footer-topo{
+    display: inline-block;
+    margin-top: 15px;
+    color: #ccc;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-topo:hover{
+    color: #fff;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.containerJaqueta{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #d3d3dd;
+    padding: 20px;
+}
+
+.categoria{
+    color: #666;
+    text-transform: uppercase;
+    font-size: 0.09em;
+    margin: 30px 0 15px 0;
+    font-weight: bold;
+}
+
+.produtos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.produto{
+    width: 30%;
+    text-align: center;
+    background-color: #ffffffff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px;
+}
+
+.produto img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.nome-produtp{
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.preco{
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+    margin-bottom:  10px 0;
+    font-weight: bold;
+}
+
+.lancamento-jaquetas{
+    padding: 60px 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+    color: #111;
+    font-family: 'Helvetica Neue', sans-serif;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 150px;
+}
+
+.lancamento-jaquetas p{
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
+
+.lancamento-jaquetas h1{
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.informacoes{
+    width: fit-content;
+    text-align: center;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin: 20px auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1)
+}
+
+.informacoes a{
+    display: inline-block;
+    margin-top: 8px;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.informacoes a:hover{
+    text-decoration: underline;
+}
+
+.formulario-info {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.formulario-info label {
+    font-weight: bold;
+}
+
+.formulario-info input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.formulario-info button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulario-info button:hover {
+    background-color: #555;
+}
+
+a.voltar {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #808285; 
+    color: white; 
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px; 
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s; 
+    margin-top: 20px;
+}
+
+a.voltar:hover {
+    background-color: #7b7c7e; 
+    transform: scale(1.05); 
+}
+
+a.voltar:active {
+    transform: scale(0.98); 
+}
